@@ -4,47 +4,12 @@ I used the following SQL query in Google BigQuery to create a single combined ta
 The UNION ALL statement is applied here instead of a JOIN statement because the tables already have matching columns, making them easy to merge completely.
 
 
-'''SELECT
-  date_created,
-  contacts_n,
-  contacts_n_1,
-  contacts_n_2,
-  contacts_n_3,
-  contacts_n_4,
-  contacts_n_5,
-  contacts_n_6,
-  contacts_n_7,
-  new_type,
-  new_market
-FROM `your project.fiber.market_1`
+'''sql
+SELECT date_created, contacts_n, contacts_n_1, contacts_n_2, contacts_n_3, contacts_n_4, contacts_n_5, contacts_n_6, contacts_n_7, new_type, new_market FROM `your project.fiber.market_1`;
 UNION ALL
-SELECT
-  date_created,
-  contacts_n,
-  contacts_n_1,
-  contacts_n_2,
-  contacts_n_3,
-  contacts_n_4,
-  contacts_n_5,
-  contacts_n_6,
-  contacts_n_7,
-  new_type,
-  new_market
-FROM `your project.fiber.market_2`
+SELECT date_created, contacts_n, contacts_n_1, contacts_n_2, contacts_n_3, contacts_n_4, contacts_n_5, contacts_n_6, contacts_n_7, new_type, new_market FROM `your project.fiber.market_2`;
 UNION ALL
-SELECT
-  date_created,
-  contacts_n,
-  contacts_n_1,
-  contacts_n_2,
-  contacts_n_3,
-  contacts_n_4,
-  contacts_n_5,
-  contacts_n_6,
-  contacts_n_7,
-  new_type,
-  new_market
-FROM `your project.market_3`
+SELECT date_created, contacts_n, contacts_n_1, contacts_n_2, contacts_n_3, contacts_n_4, contacts_n_5, contacts_n_6, contacts_n_7, new_type, new_market FROM `your project.fiber.market_3`;
 '''
  
 ## Vistualization 
