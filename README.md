@@ -3,7 +3,7 @@
 I used the following SQL query in Google BigQuery to create a single combined table that merged all three of the given datasets 
 The UNION ALL statement is applied here instead of a JOIN statement because the tables already have matching columns, making them easy to merge completely.
 
-'''
+'''SQL
 SELECT
   date_created,
   contacts_n,
@@ -44,8 +44,7 @@ SELECT
   contacts_n_7,
   new_type,
   new_market
-FROM `your project.market_3`
-'''
+FROM `your project.market_3`'''
  
 ## Vistualization 
 
