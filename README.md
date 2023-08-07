@@ -4,7 +4,6 @@ I used the following SQL query in Google BigQuery to create a single combined ta
 The UNION ALL statement is applied here instead of a JOIN statement because the tables already have matching columns, making them easy to merge completely.
 
 '''
-
 SELECT
   date_created,
   contacts_n,
@@ -46,7 +45,6 @@ SELECT
   new_type,
   new_market
 FROM `your project.market_3`
-
 '''
  
 ## Vistualization 
