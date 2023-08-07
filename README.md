@@ -3,12 +3,9 @@
 I used the following SQL query in Google BigQuery to create a single combined table that merged all three of the given datasets 
 The UNION ALL statement is applied here instead of a JOIN statement because the tables already have matching columns, making them easy to merge completely.
 
-
-'''sql
-SELECT date_created, contacts_n, contacts_n_1, contacts_n_2, contacts_n_3, contacts_n_4, contacts_n_5, contacts_n_6, contacts_n_7, new_type, new_market FROM fiber.market_1 UNION ALL
-SELECT date_created, contacts_n, contacts_n_1, contacts_n_2, contacts_n_3, contacts_n_4, contacts_n_5, contacts_n_6, contacts_n_7, new_type, new_market FROM fiber.market_2 UNION ALL
-SELECT date_created, contacts_n, contacts_n_1, contacts_n_2, contacts_n_3, contacts_n_4, contacts_n_5, contacts_n_6, contacts_n_7, new_type, new_market FROM fiber.market_3;
-'''
+    SELECT date_created, contacts_n, contacts_n_1, contacts_n_2, contacts_n_3, contacts_n_4, contacts_n_5, contacts_n_6, contacts_n_7, new_type, new_market FROM fiber.market_1 UNION ALL
+    SELECT date_created, contacts_n, contacts_n_1, contacts_n_2, contacts_n_3, contacts_n_4, contacts_n_5, contacts_n_6, contacts_n_7, new_type, new_market FROM fiber.market_2 UNION ALL
+    SELECT date_created, contacts_n, contacts_n_1, contacts_n_2, contacts_n_3, contacts_n_4, contacts_n_5, contacts_n_6, contacts_n_7, new_type, new_market FROM fiber.market_3;
  
 ## Vistualization 
 
